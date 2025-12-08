@@ -144,7 +144,7 @@ header {
   background-color: var(--farve_moonlightwhite);
 
   /* Herobilledet i baggrunden*/
-  background-image: url('../images/hero.png');
+  background-image: url('../img/hero-image.png');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -290,29 +290,6 @@ input:checked + .slider:before {
 
 
 /* Hero slut */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
