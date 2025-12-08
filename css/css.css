@@ -18,9 +18,9 @@
 
 /* Farver */
 :root{
---farve_mørkebrun: #282119; 
+--farve_mørkebrun: #332721; 
 --farve_mørkeorange: #a54d27; 
---farve_beige: #e5d8bd; 
+--farve_beige: #f5f5f5; 
 --farve_moonlightwhite: #f5f5f5; 
 
 --farve_brun: #65371f; 
@@ -385,136 +385,36 @@ input:checked + .slider:before {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* 2. Sektion */
-#sektionFeatures{
-  width: 100%;
-  height: 700px;
-  background-color: var(--farve_moonlightwhite);
-  color: var(--farve_mørkebrun)
+  .icon-btn {
+    width: 320px;
+    height: 180px;
+    background: #2f2520;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+  }
+  .icon-row {
+    display: flex;
+    gap: 160px;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 80px 0;
+  }
+  .icon-btn svg {
+    width: 60px;
+    height: 60px;
+    fill: #f5f5f5;
+
+  }
+.icon-btn img {
+  width: 60px;
+  height: 60px;
 }
-
-.flex-container {
-  display: flex;          /* aktiverer flexbox */
-  justify-content: space-between; /* centrerer indhold vandret */
-  align-items: center;    /* centrerer vertikalt (valgfrit) */
-  gap: 0px;              /* afstand mellem billede og tekst */
-  min-height: 100vh;       /* så det kan centreres lodret */
-  margin-left: 150px;
-  margin-right: 150px;
-}
-
-.video-content{
-  width: 480px;
-  max-width: 5000px;
-  height: 590px;
-  display: block;
-  border-radius: 90px;    /* ændr efter behov */
-  overflow: hidden;       /* forsikrer at indholdet bliver klippet */
-  box-shadow: 0 0px 5px #e5d8bd(0,0,0,0.2);
-  object-fit:none;      /* sørger for at videoen fylder pænt, hvis højde/bredde er sat */
-}
-
-
-.feature{ 
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: 30px;
-  font-size: 1.3em;
-}
-
-
-/*Selvlavet plus-ikon*/
-  .plus-icon {
-      display: inline-block; /* eller inline-block */
-      width: 20px;
-      height: 20px;
-      position: relative;
-    }
-
-/*Positionen af plus-ikon*/
-    .plus-icon {
-  display: flex;          /* aktiverer flexbox */
-  justify-content: right; /* centrerer indhold vandret */
-  align-items: center;    /* centrerer vertikalt (valgfrit) */
-  gap: 10px;              /* afstand mellem billede og tekst */
-  min-height: 1vh;       /* så det kan centreres lodret */
-}
-
-    .plus-icon::before,
-    .plus-icon::after {
-      content: '';
-      position: absolute;
-      background-color: var(--farve_mørkebrun); /* Farven på plusset */
-    }
-
- /* Den horisontale streg */
-    .plus-icon::before {
-      width: 100%;
-      height: 2px;
-      top: 50%;
-      left: 0;
-      transform: translateY(-50%);
-    }
-
-/* Den vertikale streg */
-    .plus-icon::after {
-      width: 2px;
-      height: 100%;
-      top: 0;
-      left: 50%;
-      transform: translateX(-50%);
-    }
-
-
-
-/*mellemrum ved linjer i højden og bredde*/
- .plus-icon {
-          margin-right: 20px; /* Tilføjer 10 pixels mellemrum */
-        }
- .plus-icon {
-          margin-left: 300px; /* Tilføjer 10 pixels mellemrum */
-        }
-
-
-
-
-        
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
