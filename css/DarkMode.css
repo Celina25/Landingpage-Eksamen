@@ -628,6 +628,7 @@ video{
 
 #LumineYourselfSektion{
   background-color: var(--farve_mørkebrun);
+  overflow: hidden;
 }
 .SHARE{
 display: flex ;
