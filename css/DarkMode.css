@@ -256,8 +256,73 @@ input:checked + .slider:before {
 
 
 
+/* 1. Sektion med gave*/
+#sektionGave{
+  background-color: var(--farve_mørkebrun);
+  color: var(--farve_moonlightwhite);
+}
+/*Afstand mellem billede og tekst*/
+.container-b img {
+  flex: 0 0 45%;  /* billedet tager 35% af bredden */
+}
 
-/* 1. Sektion*/
+/*position af billede og afstand mellem tekst og billede.*/
+.container-b {
+  display: flex;          /* aktiverer flexbox */
+  justify-content:flex-start; /*billedet starter i starten af siden */
+  align-items: center;
+  gap: 200px;            /* afstand mellem billede og tekst */
+  
+}
+#gave{
+  margin-left: -5px;
+
+}
+
+
+/*Størrelse på farvepalette*/
+.container-b img {
+  width: 100px;           /* giv billedet en fast bredde */
+  height: auto;           /* bevar proportioner */
+  
+}
+
+
+
+/* 2. Sektion */
+  .icon-btn {
+    width: 320px;
+    height: 180px;
+    background: #f5f5f5;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+  }
+  .icon-row {
+    display: flex;
+    gap: 160px;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 80px 0;
+  }
+  .icon-btn svg {
+    width: 60px;
+    height: 60px;
+    fill: #f5f5f5;
+
+  }
+.icon-btn img {
+  width: 60px;
+  height: 60px;
+}
+
+
+
+/* 3. Sektion*/
 #sektionProdukt{
   width: 100%;
   height: 700px;
@@ -343,75 +408,6 @@ input:checked + .slider:before {
         margin: 10px 0; /* Tilføj lidt plads over og under */
         
     }
-
-
-
-/* 2. Sektion */
-  .icon-btn {
-    width: 320px;
-    height: 180px;
-    background: #f5f5f5;
-    border-radius: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 20px;
-  }
-  .icon-row {
-    display: flex;
-    gap: 160px;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    padding: 80px 0;
-  }
-  .icon-btn svg {
-    width: 60px;
-    height: 60px;
-    fill: #f5f5f5;
-
-  }
-.icon-btn img {
-  width: 60px;
-  height: 60px;
-}
-
-
-
-
-/* 3. Sektion */
-#sektionGave{
-  background-color: var(--farve_mørkebrun);
-  color: var(--farve_moonlightwhite);
-}
-/*Afstand mellem billede og tekst*/
-.container-b img {
-  flex: 0 0 45%;  /* billedet tager 35% af bredden */
-}
-
-/*position af billede og afstand mellem tekst og billede.*/
-.container-b {
-  display: flex;          /* aktiverer flexbox */
-  justify-content:flex-start; /*billedet starter i starten af siden */
-  align-items: center;
-  gap: 200px;            /* afstand mellem billede og tekst */
-  
-}
-#gave{
-  margin-left: -5px;
-
-}
-
-
-/*Størrelse på farvepalette*/
-.container-b img {
-  width: 100px;           /* giv billedet en fast bredde */
-  height: auto;           /* bevar proportioner */
-  
-}
-
-
 
 
 /*Sektion 4 Luminate yourself */
