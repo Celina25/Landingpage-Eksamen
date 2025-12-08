@@ -20,90 +20,54 @@ body{
 
 /* Farver */
 :root{
---farve_mørkebrun: #282119; 
+--farve_mørkebrun: #332721; 
 --farve_mørkeorange: #a54d27; 
---farve_beige: #e5d8bd; 
---farve_moonlightwhite: #fffdf2; 
+--farve_beige: #f5f5f5; 
+--farve_moonlightwhite: #f5f5f5; 
 
 --farve_brun: #65371f; 
 --farve_orange: #c97338; 
 
 }
 
-/* Design system */
 
-/* Tekst udseende*/
-/* .jura-<uniquifier> {
-  font-family: "Jura", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 500;
-  font-style: normal;} */
 
-  /* font-family: "JetBrains Mono", monospace;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal; */
-
-h1{ 
-   font-family: "Jura", sans-serif;
-   font-size: 3.6em;
-   font-weight: 500;
-
-}
-
-h2{
-  font-family: "JetBrains Mono", monospace;
-  font-optical-sizing: auto;
-  font-weight: 700; 
-  font-style: normal; 
-
-}
-h3{
-  font-family: "Jura", sans-serif;
-   font-size: 1.8em;
-   font-weight: 300;
-   
-}
-
-h4{
-   font-family: "Jura", sans-serif;
-  font-optical-sizing: auto;
+h1 {
+  font-family: "EB Garamond", monospace;
+  font-size: 4.5em;
   font-weight: 700;
-  font-style: normal;
 }
 
-h5{
-   font-family: "Jura", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 600;
-  font-style: normal;
-}
-p{
-     font-family: "Jura", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 600;
-  font-style: normal;
+h2 {
+  font-family: "EB Garamond", monospace;
+  font-size: 2.8rem;
+  font-weight: 700;
 }
 
+h3 {
+  font-family: "Figtree", sans-serif;
+  font-size: 2rem;
+  font-weight: 300;
+}
 
+h4 {
+  font-family: "Figtree", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
 
+h5 {
+  font-family: "Judson", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 300;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+p {
+  font-family: "Figtree", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.6;
+}
 
 
 
@@ -118,7 +82,7 @@ p{
 a{
   color: var(--farve_moonlightwhite);
    margin-left: 40px;
-  font-family: "Jura", sans-serif;
+  font-family: "Judson", sans-serif;
 }
 
 
@@ -136,17 +100,14 @@ title{
 
 
 
-
-
-
 /* Hero start */
 
 header {
   height: 100vh;
-  background-color: var(--farve_moonlightwhite);
+  background-color: var(--farve_mørkebrun);
 
   /* Herobilledet i baggrunden*/
-  background-image: url('../images/herodark.png');
+  background-image: url('../img/Hero\ billede\ night\ mode.png');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -196,7 +157,7 @@ display: flex;
   display: inline-block;
   font-size: 1.4em;
   margin: 30px 0px;
-  font-family: "Jura", sans-serif; ;
+  font-family: "Judson", sans-serif; ;
   box-shadow:0 0 8px #65371f;
   margin-left: -2px;
 }
@@ -296,30 +257,6 @@ input:checked + .slider:before {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* 1. Sektion*/
 #sektionProdukt{
   width: 100%;
@@ -335,7 +272,7 @@ input:checked + .slider:before {
 }
 /*placering af billede*/
 .container-a img {
-  flex: 0 0 30%;  /* billedet tager 25% af bredden */
+  flex: 0 0 35%;  /* billedet tager 35% af bredden */
   width: 300;
   max-width: 100%; 
   height: auto;
@@ -371,7 +308,6 @@ input:checked + .slider:before {
 }
 
 
-
 /*CTA knap i sektion 1 og 3*/
 .button-button2 {
   background-color: var(--farve_moonlightwhite);
@@ -383,7 +319,7 @@ input:checked + .slider:before {
   display: inline-block;
   font-size: 1.4em;
   margin: 30px 0px;
-  font-family: "Jura", sans-serif; ;
+  font-family: "Judson", sans-serif; ;
 }
 
 /*Knap bliver rund*/
@@ -410,157 +346,36 @@ input:checked + .slider:before {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* 2. Sektion */
-#sektionFeatures{
-  width: 100%;
-  height: 700px;
-  background-color: var(--farve_mørkebrun);
-  color: var(--farve_moonlightwhite)
+  .icon-btn {
+    width: 320px;
+    height: 180px;
+    background: #f5f5f5;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+  }
+  .icon-row {
+    display: flex;
+    gap: 160px;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 80px 0;
+  }
+  .icon-btn svg {
+    width: 60px;
+    height: 60px;
+    fill: #f5f5f5;
+
+  }
+.icon-btn img {
+  width: 60px;
+  height: 60px;
 }
-
-.flex-container {
-  display: flex;          /* aktiverer flexbox */
-  justify-content: space-between; /* centrerer indhold vandret */
-  align-items: center;    /* centrerer vertikalt (valgfrit) */
-  gap: 0px;              /* afstand mellem billede og tekst */
-  min-height: 100vh;       /* så det kan centreres lodret */
-  margin-left: 150px;
-  margin-right: 150px;
-}
-video{
-  margin-left: -150px;
-}
-.video-content{
-  width: 400px;
-  max-width: 500px;
-  height: 590px;
-  display: block;
-  border-radius: 90px;    /* ændr efter behov */
-  overflow: hidden;       /* forsikrer at indholdet bliver klippet */
-  box-shadow: 0 0px 5px #e5d8bd(0,0,0,0.2);
-  object-fit:none;      /* sørger for at videoen fylder pænt, hvis højde/bredde er sat */
-}
-
-
-.feature{ 
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: 30px;
-  font-size: 1.3em;
-}
-
-
-/*Selvlavet plus-ikon*/
-  .plus-icon {
-      display: inline-block; /* eller inline-block */
-      width: 20px;
-      height: 20px;
-      position: relative;
-    }
-
-/*Positionen af plus-ikon*/
-    .plus-icon {
-  display: flex;          /* aktiverer flexbox */
-  justify-content: right; /* centrerer indhold vandret */
-  align-items: center;    /* centrerer vertikalt (valgfrit) */
-  gap: 10px;              /* afstand mellem billede og tekst */
-  min-height: 1vh;       /* så det kan centreres lodret */
-}
-
-    .plus-icon::before,
-    .plus-icon::after {
-      content: '';
-      position: absolute;
-      background-color: var(--farve_moonlightwhite); /* Farven på plusset */
-    }
-
- /* Den horisontale streg */
-    .plus-icon::before {
-      width: 100%;
-      height: 2px;
-      top: 50%;
-      left: 0;
-      transform: translateY(-50%);
-    }
-
-/* Den vertikale streg */
-    .plus-icon::after {
-      width: 2px;
-      height: 100%;
-      top: 0;
-      left: 50%;
-      transform: translateX(-50%);
-    }
-
-
-
-/*mellemrum ved linjer i højden og bredde*/
- .plus-icon {
-          margin-right: 20px; /* Tilføjer 10 pixels mellemrum */
-        }
- .plus-icon {
-          margin-left: 300px; /* Tilføjer 10 pixels mellemrum */
-        }
-
-
-
-
-        
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -599,31 +414,6 @@ video{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*Sektion 4 Luminate yourself */
 
 #LumineYourselfSektion{
@@ -647,35 +437,45 @@ margin-left: 50px;
   justify-content: center;
   align-items: center;
   animation: karrusel-animation 20s infinite alternate;
-  background-color: var(--farve_mørkebrun);
+  background-color: var(--farve_moonlightwhite);
 }
-.karrusel{
-  width: 100%;
-  height: 450px;
-  background-color: var(--farve_mørkebrun);
-  .slides{
-    width: 300%;
-    height: 450px;
-    display: flex;
-    background-color: var(--);
-  }
-  img{
-    width: calc(50% / 7);
-    height: 400px;
-    margin: 10px;
-    object-fit: contain;
-  }
+.carousel {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  width: 100%;                /* Fylder hele siden */
+  margin: 40px auto;
 }
 
-@keyframes karrusel-animation {
-  0%{
-    transform: translateX(0);
-  }
-  100%{
-    transform: translateX(-60%);
-  }
-  
+.carousel-track-container {
+  overflow: hidden;
+  flex-grow: 1;               /* Brug al den plads der er */
 }
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.4s ease;
+}
+
+/* 4 billeder pr. række */
+.carousel-track img {
+  width: calc((100% / 3) - 10px);   /* Auto-beregnet bredde */
+  height: 300px;
+  object-fit: cover;
+  margin-right: 10px;
+  border-radius: 10px;
+}
+
+button {
+  background: #f5f5f5;
+  color: #332721;
+  border: none;
+  font-size: 24px;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
 
 
 /*Footer*/
