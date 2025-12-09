@@ -35,24 +35,31 @@ const colors = [
     title: "Moonlight White",
     color: "white",
     hex: "#EBDEC6",
-    image: "img/Billeder af højtaler/White Lumina png.png"
+    image: "White Lumina png.png"
 
   },
 {
   title: "Chocolate Brown", 
 color: "brown",
 hex: "#282119",
-image: "/Billeder af højtaler/Brown Lumina png.png",
+image: "Brown Lumina png.png",
 },
 ];
 
 const colorPicker = document.querySelector("#color-picker");
 const selectedColorTitle = document.querySelector("#selected-color-title");
-const speakerImage = document.querySelector("#selected -speaker-image");
+const speakerImage = document.querySelector("#selected-speaker-image");
+
 
 // Gennemløb farverne og opret knapper for hver farve//
 for (const color of colors) {
-  const html = /*html*/ `<button class="color-option" style="background-color: ${color.hex};"></button>`;
-  colorPicker,insertAdjacentHTML("beforeend", html); // Tilføj knap til farvevalg//
-}
+    const html = `<button class="color-option" style="background-color: ${color.hex};"></button>`;
+    colorPicker.insertAdjacentHTML("beforeend", html);
 
+    const colorOption = colorPicker.lastElementChild;
+
+    colorOption.onclick = () => {
+        selectedColorTitle.textContent = color.title;
+        speakerImage.src = color.image;
+    };
+  }
