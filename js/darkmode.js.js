@@ -64,9 +64,19 @@ image: "Højtaler som gave chocolate brown.png",
   },
 ];
 
-const colorPicker = document.querySelector("#color-picker");
-const selectedColorTitle = document.querySelector("#selected-color-title");
-const speakerImage = document.querySelector("#selected-speaker-image");
+createColorPicker({
+  pickerId: "#color-picker",
+  titleId: "#selected-color-title",
+  imageId: "#selected-speaker-image",
+});
+
+// Den nye farvevælger:
+createColorPicker({
+  pickerId: "#color-picker-2",
+  titleId: "#selected-color-title-2",
+  imageId: "#selected-speaker-image-2",
+});
+
 
 
 // Gennemløb farverne og opret knapper for hver farve//
@@ -81,4 +91,29 @@ for (const color of colors) {
         speakerImage.src = color.image;
     };
   }
+  
+
+
+  function createColorPicker(options) {
+  const { pickerId, titleId, imageId } = options;
+
+  const colorPicker = document.querySelector(pickerId);
+  const selectedColorTitle = document.querySelector(titleId);
+  const speakerImage = document.querySelector(imageId);
+
+  for (const color of colors) {
+    const html = `
+      <button class="color-option" style="background-color: ${color.hex};"></button>
+    `;
+    colorPicker.insertAdjacentHTML("beforeend", html);
+
+    const colorButton = colorPicker.lastElementChild;
+
+    colorButton.onclick = () => {
+      selectedColorTitle.textContent = color.title;
+      speakerImage.src = color.image;
+    };
+  }
+}
+
   
