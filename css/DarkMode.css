@@ -278,6 +278,23 @@ input:checked + .slider:before {
   margin-left: -5px;
 
 }
+/*Størrelse på farvepalette*/
+.container-b img {
+  width: 100px;           /* giv billedet en fast bredde */
+  height: auto;           /* bevar proportioner */
+  
+}
+
+.color-option {
+width: 40px;
+height: 40px;
+border-radius: 50%;
+border: 2px solid #ccc;
+cursor: pointer;
+transition: transform 0.2s;
+}
+
+
 
 
 /*Størrelse på farvepalette*/
