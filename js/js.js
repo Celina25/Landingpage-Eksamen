@@ -35,33 +35,33 @@ const colors = [
     title: "Moonlight White",
     color: "white",
     hex: "#EBDEC6",
-    image: "Højtaler som gave moonliight white.png",
+    image: "images/white-lumina.png",
 
   },
 {
   title: "Chocolate Brown", 
 color: "brown",
 hex: "#282119",
-image: "Højtaler som gave chocolate brown.png",
+image: "images/brown-lumina.png",
 
 },
 {
     title: "Dusty Rose",
     color: "pink",
     hex: "#DDA1A2",
-    image: "Højtaler som gave dusty rose.png",
+    image: "image/rose-lumina.png",
 
   },{
     title: "Lavender Mist",
     color: "purple",
     hex: "#C3BFD5",
-    image: "Højtaler som gave lavender mist.png",
+    image: "images/lavender-lumina.png",
 
   },{
     title: "Sage Green",
     color: "grøn",
     hex: "#B2AC88",
-    image: "Højtaler som gave sage green.png",
+    image: "img/green-lumina.png",
 
   },
 ];
@@ -117,3 +117,4 @@ for (const color of colors) {
     };
   }
 }
+
