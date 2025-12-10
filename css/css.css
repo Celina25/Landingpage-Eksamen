@@ -309,6 +309,7 @@ transition: transform 0.2s;
     align-items: center;
     justify-content: center;
     margin: 20px;
+    border: 4px solid var(--farve_mørkeorange);
   }
   .icon-row {
     display: flex;
